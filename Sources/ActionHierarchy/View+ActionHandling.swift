@@ -32,6 +32,10 @@ public extension View {
 		return modifier(handlerModifier)
 	}
 	
+	func receiveAction<Received: Action>(_ type: Received.Type, closure: @escaping () -> ReceiveActionResult) -> some View {
+		receiveAction(type) { _ in closure() }
+	}
+	
 	func handleAction(_ handler: @escaping (Action) -> Void) -> some View {
 		receiveAction {
 			handler($0)
@@ -46,6 +50,10 @@ public extension View {
 		}
 	}
 	
+	func handleAction<Handled: Action>(_ type: Handled.Type, handler: @escaping () -> Void) -> some View {
+		handleAction(type) { _ in handler() }
+	}
+	
 	func transformAction(_ transform: @escaping (Action) -> Action) -> some View {
 		modifier(ActionHandlerViewModifier(handler: transform))
 	}
@@ -56,6 +64,10 @@ public extension View {
 			return transform(action)
 		}
 		return modifier(transformModifier)
+	}
+	
+	func transformAction<Transformed: Action>(_ type: Transformed.Type, transform: @escaping () -> Action) -> some View {
+		transformAction(type) { _ in transform() }
 	}
 	
 }
