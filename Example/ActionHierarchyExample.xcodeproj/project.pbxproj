@@ -11,6 +11,7 @@
 		C8D8D9DA277E520D002CE338 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D8D9D9277E520D002CE338 /* ContentView.swift */; };
 		C8D8D9DC277E520F002CE338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8D8D9DB277E520F002CE338 /* Assets.xcassets */; };
 		C8D8D9DF277E520F002CE338 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8D8D9DE277E520F002CE338 /* Preview Assets.xcassets */; };
+		C8D8D9E9277E557A002CE338 /* ActionHierarchy in Frameworks */ = {isa = PBXBuildFile; productRef = C8D8D9E8277E557A002CE338 /* ActionHierarchy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8D8D9E9277E557A002CE338 /* ActionHierarchy in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +41,7 @@
 				C8D8D9D6277E520D002CE338 /* ActionHierarchyExample */,
 				C8D8D9E5277E527D002CE338 /* Packages */,
 				C8D8D9D5277E520D002CE338 /* Products */,
+				C8D8D9E7277E557A002CE338 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +80,13 @@
 			name = Packages;
 			sourceTree = "<group>";
 		};
+		C8D8D9E7277E557A002CE338 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -93,6 +103,9 @@
 			dependencies = (
 			);
 			name = ActionHierarchyExample;
+			packageProductDependencies = (
+				C8D8D9E8277E557A002CE338 /* ActionHierarchy */,
+			);
 			productName = ActionHierarchyExample;
 			productReference = C8D8D9D4277E520D002CE338 /* ActionHierarchyExample.app */;
 			productType = "com.apple.product-type.application";
@@ -351,6 +364,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C8D8D9E8277E557A002CE338 /* ActionHierarchy */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ActionHierarchy;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C8D8D9CC277E520D002CE338 /* Project object */;
 }
