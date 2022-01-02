@@ -6,7 +6,7 @@ import SwiftUI
 
 public extension EnvironmentValues {
 	var triggerAction: (Action) -> Void {
-		{  _ = actionClosure($0) }
+		{ _ = actionClosure($0) }
 	}
 }
 

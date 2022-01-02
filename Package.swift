@@ -9,16 +9,19 @@ let package = Package(
 	products: [
 		.library(
 			name: "ActionHierarchy",
-			targets: ["ActionHierarchy"]),
+			targets: ["ActionHierarchy"]
+		),
 	],
 	dependencies: [
 	],
 	targets: [
 		.target(
 			name: "ActionHierarchy",
-			dependencies: []),
+			dependencies: []
+		),
 		.testTarget(
 			name: "ActionHierarchyTests",
-			dependencies: ["ActionHierarchy"]),
+			dependencies: ["ActionHierarchy"]
+		),
 	]
 )

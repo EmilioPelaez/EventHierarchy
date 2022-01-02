@@ -21,7 +21,7 @@ public extension View {
 		return modifier(handlerModifier)
 	}
 	
-	func receiveAction<Received: Action>(_ type: Received.Type, closure: @escaping (Received) -> ReceiveActionResult) -> some View {
+	func receiveAction<Received: Action>(_: Received.Type, closure: @escaping (Received) -> ReceiveActionResult) -> some View {
 		let handlerModifier = ActionHandlerViewModifier {
 			guard let action = $0 as? Received else { return $0 }
 			switch closure(action) {
@@ -58,7 +58,7 @@ public extension View {
 		modifier(ActionHandlerViewModifier(handler: transform))
 	}
 	
-	func transformAction<Transformed: Action>(_ type: Transformed.Type, transform: @escaping (Transformed) -> Action) -> some View {
+	func transformAction<Transformed: Action>(_: Transformed.Type, transform: @escaping (Transformed) -> Action) -> some View {
 		let transformModifier = ActionHandlerViewModifier {
 			guard let action = $0 as? Transformed else { return $0 }
 			return transform(action)
