@@ -65,8 +65,8 @@ If it returns `.unhandled` instead, the `Action` will continue to be propagated.
 
 ### Handling an `Action`
 
-Any action that is handled will no longer be propagated up the view hierarchy. This is equivalent as using a `receiveAction` function that always return `.handled`.
+Any action that is handled will no longer be propagated up the view hierarchy. This is equivalent to using a `receiveAction` closure that always returns `.handled`.
 
 ### Transforming an `Action`
 
-Transforming functions can be used to replace the received `Action` by another, it could be an `Action` of a different type, or an `Action` of the same type but with different values.
+Transforming functions can be used to replace the received `Action`. It could be an `Action` of a different type, or an `Action` of the same type but with different values.

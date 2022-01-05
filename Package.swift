@@ -19,9 +19,5 @@ let package = Package(
 			name: "ActionHierarchy",
 			dependencies: []
 		),
-		.testTarget(
-			name: "ActionHierarchyTests",
-			dependencies: ["ActionHierarchy"]
-		),
 	]
 )
