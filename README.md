@@ -1,8 +1,8 @@
-# ActionHierarchy
+# Action Hierarchy
 
 `ActionHierarchy` is a small framework designed to use the SwiftUI view hierarchy as a responder chain.
 
-`View` objects that are lower in the hierarchy send `Action` objects up the view hierarchy, while views that are higher in the hierarchy use one of the modifiers to register themselves as a responder to receive, transform, or handle the `Action` objects.
+Using a closure contained in `EnvironmentValues`, `View` objects that are lower in the hierarchy send `Action` objects up the view hierarchy, while views that are higher in the hierarchy use one of the modifiers to register themselves as a responder to receive, transform, or handle the `Action` objects.
 
 ## Actions
 
@@ -17,7 +17,7 @@ Actions are triggered using the `triggerAction` closure added to `EnvironmentVal
 Example:
 
 ```swift
-enum MyAction: Action {}
+struct MyAction: Action {}
 
 struct TriggerView: View {
 	@Environment(\.triggerAction) var triggerAction
