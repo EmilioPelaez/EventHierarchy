@@ -11,11 +11,11 @@
 		C8B9FC59278992E100A4474A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B9FC58278992E100A4474A /* ContentView.swift */; };
 		C8B9FC5B278992E300A4474A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8B9FC5A278992E300A4474A /* Assets.xcassets */; };
 		C8B9FC5E278992E300A4474A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8B9FC5D278992E300A4474A /* Preview Assets.xcassets */; };
-		C8B9FC692789931700A4474A /* EventHandlerViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B9FC652789931700A4474A /* EventHandlerViewModifier.swift */; };
-		C8B9FC6A2789931700A4474A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B9FC662789931700A4474A /* Event.swift */; };
-		C8B9FC6B2789931700A4474A /* View+EventHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B9FC672789931700A4474A /* View+EventHandling.swift */; };
-		C8B9FC6C2789931700A4474A /* EventEnvironmentValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B9FC682789931700A4474A /* EventEnvironmentValues.swift */; };
 		C8B9FC742789934000A4474A /* EventHierarchyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B9FC732789934000A4474A /* EventHierarchyUITests.swift */; };
+		C8B9FCBF278A596D00A4474A /* EventEnvironmentValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B9FCBB278A596D00A4474A /* EventEnvironmentValues.swift */; };
+		C8B9FCC0278A596D00A4474A /* View+EventHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B9FCBC278A596D00A4474A /* View+EventHandling.swift */; };
+		C8B9FCC1278A596D00A4474A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B9FCBD278A596D00A4474A /* Event.swift */; };
+		C8B9FCC2278A596D00A4474A /* EventHandlerViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B9FCBE278A596D00A4474A /* EventHandlerViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +34,12 @@
 		C8B9FC58278992E100A4474A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C8B9FC5A278992E300A4474A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8B9FC5D278992E300A4474A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C8B9FC652789931700A4474A /* EventHandlerViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventHandlerViewModifier.swift; path = ../../../Sources/EventHierarchy/EventHandlerViewModifier.swift; sourceTree = "<group>"; };
-		C8B9FC662789931700A4474A /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = ../../../Sources/EventHierarchy/Event.swift; sourceTree = "<group>"; };
-		C8B9FC672789931700A4474A /* View+EventHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "View+EventHandling.swift"; path = "../../../Sources/EventHierarchy/View+EventHandling.swift"; sourceTree = "<group>"; };
-		C8B9FC682789931700A4474A /* EventEnvironmentValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventEnvironmentValues.swift; path = ../../../Sources/EventHierarchy/EventEnvironmentValues.swift; sourceTree = "<group>"; };
 		C8B9FC712789934000A4474A /* EventHierarchyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventHierarchyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8B9FC732789934000A4474A /* EventHierarchyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHierarchyUITests.swift; sourceTree = "<group>"; };
+		C8B9FCBB278A596D00A4474A /* EventEnvironmentValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventEnvironmentValues.swift; path = ../../Sources/EventHierarchy/EventEnvironmentValues.swift; sourceTree = "<group>"; };
+		C8B9FCBC278A596D00A4474A /* View+EventHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "View+EventHandling.swift"; path = "../../Sources/EventHierarchy/View+EventHandling.swift"; sourceTree = "<group>"; };
+		C8B9FCBD278A596D00A4474A /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = ../../Sources/EventHierarchy/Event.swift; sourceTree = "<group>"; };
+		C8B9FCBE278A596D00A4474A /* EventHandlerViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventHandlerViewModifier.swift; path = ../../Sources/EventHierarchy/EventHandlerViewModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 		C8B9FC55278992E100A4474A /* EventHierarchyTests */ = {
 			isa = PBXGroup;
 			children = (
-				C8B9FC642789930400A4474A /* Source */,
+				C8B9FCBA278A595400A4474A /* Source */,
 				C8B9FC56278992E100A4474A /* EventHierarchyTestsApp.swift */,
 				C8B9FC58278992E100A4474A /* ContentView.swift */,
 				C8B9FC5A278992E300A4474A /* Assets.xcassets */,
@@ -98,23 +98,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		C8B9FC642789930400A4474A /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				C8B9FC662789931700A4474A /* Event.swift */,
-				C8B9FC682789931700A4474A /* EventEnvironmentValues.swift */,
-				C8B9FC652789931700A4474A /* EventHandlerViewModifier.swift */,
-				C8B9FC672789931700A4474A /* View+EventHandling.swift */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
 		C8B9FC722789934000A4474A /* EventHierarchyUITests */ = {
 			isa = PBXGroup;
 			children = (
 				C8B9FC732789934000A4474A /* EventHierarchyUITests.swift */,
 			);
 			path = EventHierarchyUITests;
+			sourceTree = "<group>";
+		};
+		C8B9FCBA278A595400A4474A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C8B9FCBD278A596D00A4474A /* Event.swift */,
+				C8B9FCBB278A596D00A4474A /* EventEnvironmentValues.swift */,
+				C8B9FCBE278A596D00A4474A /* EventHandlerViewModifier.swift */,
+				C8B9FCBC278A596D00A4474A /* View+EventHandling.swift */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,12 +217,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8B9FC6A2789931700A4474A /* Event.swift in Sources */,
-				C8B9FC692789931700A4474A /* EventHandlerViewModifier.swift in Sources */,
+				C8B9FCC0278A596D00A4474A /* View+EventHandling.swift in Sources */,
 				C8B9FC59278992E100A4474A /* ContentView.swift in Sources */,
-				C8B9FC6B2789931700A4474A /* View+EventHandling.swift in Sources */,
-				C8B9FC6C2789931700A4474A /* EventEnvironmentValues.swift in Sources */,
+				C8B9FCBF278A596D00A4474A /* EventEnvironmentValues.swift in Sources */,
+				C8B9FCC2278A596D00A4474A /* EventHandlerViewModifier.swift in Sources */,
 				C8B9FC57278992E100A4474A /* EventHierarchyTestsApp.swift in Sources */,
+				C8B9FCC1278A596D00A4474A /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

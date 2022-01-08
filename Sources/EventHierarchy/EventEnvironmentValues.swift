@@ -17,19 +17,16 @@ public extension EnvironmentValues {
 	 `assertionFailure` will be triggered.
 	 */
 	var triggerEvent: (Event) -> Void {
-		{ _ = eventClosure($0) }
+		{ eventClosure($0) }
 	}
 }
 
 struct EventClosureEnvironmentKey: EnvironmentKey {
-	static var defaultValue: (Event) -> Event? = { event in
-		assertionFailure("Failed to handle event \(event)")
-		return nil
-	}
+	static var defaultValue: (Event) -> Void = { _ in }
 }
 
 extension EnvironmentValues {
-	var eventClosure: (Event) -> Event? {
+	var eventClosure: (Event) -> Void {
 		get { self[EventClosureEnvironmentKey.self] }
 		set { self[EventClosureEnvironmentKey.self] = newValue }
 	}

@@ -15,7 +15,6 @@ struct EventHandlerViewModifier: ViewModifier {
 				if let result = handler($0) {
 					_ = eventClosure(result)
 				}
-				return nil
 			}
 	}
 }
