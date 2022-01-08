@@ -1,0 +1,14 @@
+name: Test
+
+on: [push, pull_request]
+jobs:
+  run-tests:
+    runs-on: macos-11
+    steps:
+    - uses: actions/checkout@v2
+    - name: List available Xcode versions
+      run: ls /Applications | grep Xcode
+    - name: Select Xcode
+      run: sudo xcode-select -switch /Applications/Xcode_13.2.app && /usr/bin/xcodebuild -version
+    - name: Run unit tests
+      run: xcodebuild test -scheme EventHierarchyTests -project Tests/EventHierarchyTests.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 13 mini,OS=15.2' | xcpretty && exit ${PIPESTATUS[0]}
