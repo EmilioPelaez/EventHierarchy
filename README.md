@@ -1,5 +1,7 @@
 # Event Hierarchy
 
+![example workflow](https://github.com/EmilioPelaez/EventHierarchy/actions/workflows/Test.yml/badge.svg)
+
 `EventHierarchy` is a small framework designed to use the SwiftUI view hierarchy as a responder chain.
 
 Using a closure contained in `EnvironmentValues`, `View` objects that are lower in the hierarchy send `Event` objects up the view hierarchy, while views that are higher in the hierarchy use one of the modifiers to register themselves as a responder to receive, transform, or handle the `Event` objects.
