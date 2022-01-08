@@ -1,72 +1,72 @@
-# Action Hierarchy
+# Event Hierarchy
 
-`ActionHierarchy` is a small framework designed to use the SwiftUI view hierarchy as a responder chain.
+`EventHierarchy` is a small framework designed to use the SwiftUI view hierarchy as a responder chain.
 
-Using a closure contained in `EnvironmentValues`, `View` objects that are lower in the hierarchy send `Action` objects up the view hierarchy, while views that are higher in the hierarchy use one of the modifiers to register themselves as a responder to receive, transform, or handle the `Action` objects.
+Using a closure contained in `EnvironmentValues`, `View` objects that are lower in the hierarchy send `Event` objects up the view hierarchy, while views that are higher in the hierarchy use one of the modifiers to register themselves as a responder to receive, transform, or handle the `Event` objects.
 
-## Actions
+## Events
 
-`Action` is requirement-less protocol that identifies a type as an action that can be sent up the SwiftUI view hierarchy.
+`Event` is requirement-less protocol that identifies a type as an event that can be sent up the SwiftUI view hierarchy.
 
 It can be of any type and contain any kind of additional information. It exists to avoid annotating the types used by methods in this framework as `Any`.
 
-## Triggering an `Action`
+## Triggering an `Event`
 
-Actions are triggered using the `triggerAction` closure added to `EnvironmentValues`.
+Events are triggered using the `triggerEvent` closure added to `EnvironmentValues`.
 
 Example:
 
 ```swift
-struct MyAction: Action {}
+struct MyEvent: Event {}
 
 struct TriggerView: View {
-	@Environment(\.triggerAction) var triggerAction
+	@Environment(\.triggerEvent) var triggerEvent
 	
 	var body: some View {
 		Button("Trigger") {
-			triggerAction(MyAction())
+			triggerEvent(MyEvent())
 		}
 	}
 }
 ```
 
-## Receiving, Handling and Transforming an `Action`
+## Receiving, Handling and Transforming an `Event`
 
-There are three kinds of operations that can be applied to an `Action` that has been triggered. All of these are executed by registering a closure the same way you would apply a view modifier to a `View`.
-
-```swift
-struct ContentView: View {
-	var body: some View {
-		TriggerView()
-			.receiveAction { .notHandled }
-			.transformAction { MyAction() }
-			.handleAction {}
-	}
-}
-```
-
-All of these functions have a generic version that receives the type of an `Action` as the first parameter, only actions matching the provided type will be acted on, any other action will be propagated up the view hierarchy.
+There are three kinds of operations that can be applied to an `Event` that has been triggered. All of these are executed by registering a closure the same way you would apply a view modifier to a `View`.
 
 ```swift
 struct ContentView: View {
 	var body: some View {
 		TriggerView()
-			.handleAction(MyAction.self) {}
+			.receiveEvent { .notHandled }
+			.transformEvent { MyEvent() }
+			.handleEvent {}
 	}
 }
 ```
 
-### Receiving an `Action`
+All of these functions have a generic version that receives the type of an `Event` as the first parameter, only events matching the provided type will be acted on, any other event will be propagated up the view hierarchy.
 
-When receiving an `Action`, it's up to the registered closure to determine whether the `Action` has been fully handled or not.
+```swift
+struct ContentView: View {
+	var body: some View {
+		TriggerView()
+			.handleEvent(MyEvent.self) {}
+	}
+}
+```
 
-If the registered closure returns `.handled`, the `Action` will no longer be propagated up the view hierarchy.
-If it returns `.unhandled` instead, the `Action` will continue to be propagated.
+### Receiving an `Event`
 
-### Handling an `Action`
+When receiving an `Event`, it's up to the registered closure to determine whether the `Event` has been fully handled or not.
 
-Any action that is handled will no longer be propagated up the view hierarchy. This is equivalent to using a `receiveAction` closure that always returns `.handled`.
+If the registered closure returns `.handled`, the `Event` will no longer be propagated up the view hierarchy.
+If it returns `.unhandled` instead, the `Event` will continue to be propagated.
 
-### Transforming an `Action`
+### Handling an `Event`
 
-Transforming functions can be used to replace the received `Action`. It could be an `Action` of a different type, or an `Action` of the same type but with different values.
+Any event that is handled will no longer be propagated up the view hierarchy. This is equivalent to using a `receiveEvent` closure that always returns `.handled`.
+
+### Transforming an `Event`
+
+Transforming functions can be used to replace the received `Event`. It could be an `Event` of a different type, or an `Event` of the same type but with different values.

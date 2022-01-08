@@ -6,4 +6,4 @@
  A requirement-less protocol that identifies a type as an action that can be
  sent up the SwiftUI view hierarchy
  */
-public protocol Action {}
+public protocol Event {}

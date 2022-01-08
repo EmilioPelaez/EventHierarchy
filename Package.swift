@@ -4,19 +4,19 @@
 import PackageDescription
 
 let package = Package(
-	name: "ActionHierarchy",
+	name: "EventHierarchy",
 	platforms: [.iOS(.v13), .macOS(.v10_15), .watchOS(.v6), .macCatalyst(.v13), .tvOS(.v13)],
 	products: [
 		.library(
-			name: "ActionHierarchy",
-			targets: ["ActionHierarchy"]
+			name: "EventHierarchy",
+			targets: ["EventHierarchy"]
 		),
 	],
 	dependencies: [
 	],
 	targets: [
 		.target(
-			name: "ActionHierarchy",
+			name: "EventHierarchy",
 			dependencies: []
 		),
 	]

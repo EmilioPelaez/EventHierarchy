@@ -1,13 +1,13 @@
 //
-//  ActionHierarchyUITests.swift
-//  ActionHierarchyUITests
+//  EventHierarchyUITests.swift
+//  EventHierarchyUITests
 //
-//  Created by Emilio Peláez on 6/1/22.
+//  Created by Emilio Peláez on 8/1/22.
 //
 
 import XCTest
 
-class ActionHierarchyUITests: XCTestCase {
+class EventHierarchyUITests: XCTestCase {
 	
 	override func setUpWithError() throws {
 		continueAfterFailure = false

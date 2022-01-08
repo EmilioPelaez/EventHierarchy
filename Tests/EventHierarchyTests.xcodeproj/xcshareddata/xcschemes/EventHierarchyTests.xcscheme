@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C8450C8F2786631100B77623"
-               BuildableName = "ActionHierarchyTests.app"
-               BlueprintName = "ActionHierarchyTests"
-               ReferencedContainer = "container:ActionHierarchyTests.xcodeproj">
+               BlueprintIdentifier = "C8B9FC52278992E100A4474A"
+               BuildableName = "EventHierarchyTests.app"
+               BlueprintName = "EventHierarchyTests"
+               ReferencedContainer = "container:EventHierarchyTests.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,10 +33,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C8450CAD278663A300B77623"
-               BuildableName = "ActionHierarchyUITests.xctest"
-               BlueprintName = "ActionHierarchyUITests"
-               ReferencedContainer = "container:ActionHierarchyTests.xcodeproj">
+               BlueprintIdentifier = "C8B9FC702789934000A4474A"
+               BuildableName = "EventHierarchyUITests.xctest"
+               BlueprintName = "EventHierarchyUITests"
+               ReferencedContainer = "container:EventHierarchyTests.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C8450C8F2786631100B77623"
-            BuildableName = "ActionHierarchyTests.app"
-            BlueprintName = "ActionHierarchyTests"
-            ReferencedContainer = "container:ActionHierarchyTests.xcodeproj">
+            BlueprintIdentifier = "C8B9FC52278992E100A4474A"
+            BuildableName = "EventHierarchyTests.app"
+            BlueprintName = "EventHierarchyTests"
+            ReferencedContainer = "container:EventHierarchyTests.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,10 +72,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C8450C8F2786631100B77623"
-            BuildableName = "ActionHierarchyTests.app"
-            BlueprintName = "ActionHierarchyTests"
-            ReferencedContainer = "container:ActionHierarchyTests.xcodeproj">
+            BlueprintIdentifier = "C8B9FC52278992E100A4474A"
+            BuildableName = "EventHierarchyTests.app"
+            BlueprintName = "EventHierarchyTests"
+            ReferencedContainer = "container:EventHierarchyTests.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
