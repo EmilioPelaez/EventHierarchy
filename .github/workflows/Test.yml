@@ -3,7 +3,7 @@ name: Test
 on: [push, pull_request]
 jobs:
   run-tests:
-    runs-on: macOS-latest
+    runs-on: macos-11
     steps:
     - uses: actions/checkout@v2
     - name: List available Xcode versions
