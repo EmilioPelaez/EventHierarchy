@@ -1,7 +1,7 @@
 # Event Hierarchy
 
-[![Tests](https://github.com/EmilioPelaez/EventHierarchy/actions/workflows/tests.yml/badge.svg)](https://github.com/EmilioPelaez/EventHierarchy/actions/workflows/tests.yml)
-[![codecov](https://codecov.io/gh/EmilioPelaez/ErrorHierarchy/branch/main/graph/badge.svg?token=PTWX2D5ZVK)](https://codecov.io/gh/EmilioPelaez/ErrorHierarchy)
+[![tests](https://github.com/EmilioPelaez/EventHierarchy/actions/workflows/tests.yml/badge.svg)](https://github.com/EmilioPelaez/EventHierarchy/actions/workflows/tests.yml)
+[![codecov](https://codecov.io/gh/EmilioPelaez/EventHierarchy/branch/main/graph/badge.svg?token=GTDVSWKNZF)](https://codecov.io/gh/EmilioPelaez/EventHierarchy)
 [![Platforms](https://img.shields.io/badge/platforms-iOS%20|%20Mac%20|%20tvOS%20-lightgray.svg)]()
 [![Swift 5.5](https://img.shields.io/badge/swift-5.5-red.svg?style=flat)](https://developer.apple.com/swift)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://opensource.org/licenses/MIT)
