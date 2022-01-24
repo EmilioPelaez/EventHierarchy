@@ -7,9 +7,13 @@
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://opensource.org/licenses/MIT)
 [![Twitter](https://img.shields.io/badge/twitter-@emiliopelaez-blue.svg)](http://twitter.com/emiliopelaez)
 
-`EventHierarchy` is a small framework designed to use the SwiftUI view hierarchy as a responder chain.
+`EventHierarchy` is a small framework designed to use the SwiftUI view hierarchy as a responder chain for event handling.
 
-Using a closure contained in `EnvironmentValues`, `View` objects that are lower in the hierarchy send `Event` objects up the view hierarchy, while views that are higher in the hierarchy use one of the modifiers to register themselves as a responder to receive, transform, or handle the `Event` objects.
+A more detailed explanation can be found in [this article](https://betterprogramming.pub/building-a-responder-chain-using-the-swiftui-view-hierarchy-2a08df23689c).
+
+TL;DR: Using a closure contained in `EnvironmentValues`, `View` objects that are lower in the hierarchy send `Event` objects up the view hierarchy, while views that are higher in the hierarchy use one of the modifiers to register themselves as a responder to receive, transform, or handle the `Event` objects.
+
+This is a sibling framework to [`ErrorHierarchy`](https://github.com/EmilioPelaez/ErrorHierarchy), but specialized in event handling.
 
 ## Events
 
