@@ -51,13 +51,9 @@ struct TriggerView: View {
 			Button("Trigger First Console Event") {
 				triggerEvent(FirstEvent.first)
 			}
-			Button("Trigger Second Console Event") {
-				triggerEvent(SecondEvent.second)
-			}
-			Button("Trigger Unhandled Event") {
-				triggerEvent(UnhandledEvent.unhandled)
-			}
-			.tint(.red)
+			EventButton("Trigger Second Console Event", event: SecondEvent.second)
+			EventButton("Trigger Unhandled Event" as LocalizedStringKey, event: UnhandledEvent.unhandled)
+				.tint(.red)
 		}
 		.buttonStyle(.borderedProminent)
 		.tint(.blue)

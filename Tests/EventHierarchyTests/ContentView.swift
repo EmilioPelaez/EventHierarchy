@@ -42,11 +42,12 @@ struct TriggerView: View {
 	@Environment(\.triggerEvent) var triggerEvent
 	
 	var body: some View {
-		Button("Test 1") {
-			triggerEvent(FirstEvent())
-		}
-		Button("Test 2") {
-			triggerEvent(ThirdEvent())
+		VStack {
+			EventButton(FirstEvent()) {
+				Text("Test 1")
+			}
+			EventButton("Test 2", event: ThirdEvent())
+			EventButton("Test 3" as LocalizedStringKey, event: ThirdEvent())
 		}
 	}
 }

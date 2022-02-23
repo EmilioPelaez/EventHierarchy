@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C861433627C6FF5E003D2904 /* EventButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C861433527C6FF5D003D2904 /* EventButton.swift */; };
 		C8B9FC57278992E100A4474A /* EventHierarchyTestsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B9FC56278992E100A4474A /* EventHierarchyTestsApp.swift */; };
 		C8B9FC59278992E100A4474A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B9FC58278992E100A4474A /* ContentView.swift */; };
 		C8B9FC5B278992E300A4474A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8B9FC5A278992E300A4474A /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C861433527C6FF5D003D2904 /* EventButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventButton.swift; path = ../../Sources/EventHierarchy/EventButton.swift; sourceTree = "<group>"; };
 		C8B9FC53278992E100A4474A /* EventHierarchyTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventHierarchyTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8B9FC56278992E100A4474A /* EventHierarchyTestsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHierarchyTestsApp.swift; sourceTree = "<group>"; };
 		C8B9FC58278992E100A4474A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		C8B9FCBA278A595400A4474A /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				C861433527C6FF5D003D2904 /* EventButton.swift */,
 				C8B9FCBD278A596D00A4474A /* Event.swift */,
 				C8B9FCBB278A596D00A4474A /* EventEnvironmentValues.swift */,
 				C8B9FCBE278A596D00A4474A /* EventHandlerViewModifier.swift */,
@@ -222,6 +225,7 @@
 				C8B9FCBF278A596D00A4474A /* EventEnvironmentValues.swift in Sources */,
 				C8B9FCC2278A596D00A4474A /* EventHandlerViewModifier.swift in Sources */,
 				C8B9FC57278992E100A4474A /* EventHierarchyTestsApp.swift in Sources */,
+				C861433627C6FF5E003D2904 /* EventButton.swift in Sources */,
 				C8B9FCC1278A596D00A4474A /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
