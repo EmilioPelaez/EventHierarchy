@@ -4,6 +4,10 @@
 
 import SwiftUI
 
+/*
+ A View that receives, instead of a closure, an Event that will be triggered when
+ the underlying Button action would be called
+ */
 public struct EventButton<Label: View>: View {
 	@Environment(\.triggerEvent) var triggerEvent
 	

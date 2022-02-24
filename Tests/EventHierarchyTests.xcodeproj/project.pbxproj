@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C861433627C6FF5E003D2904 /* EventButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C861433527C6FF5D003D2904 /* EventButton.swift */; };
+		C861433927C700A0003D2904 /* ErrorHierarchy in Frameworks */ = {isa = PBXBuildFile; productRef = C861433827C700A0003D2904 /* ErrorHierarchy */; };
+		C861433B27C701EE003D2904 /* View+FailableEventHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = C861433A27C701EE003D2904 /* View+FailableEventHandling.swift */; };
 		C8B9FC57278992E100A4474A /* EventHierarchyTestsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B9FC56278992E100A4474A /* EventHierarchyTestsApp.swift */; };
 		C8B9FC59278992E100A4474A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B9FC58278992E100A4474A /* ContentView.swift */; };
 		C8B9FC5B278992E300A4474A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8B9FC5A278992E300A4474A /* Assets.xcassets */; };
@@ -31,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		C861433527C6FF5D003D2904 /* EventButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventButton.swift; path = ../../Sources/EventHierarchy/EventButton.swift; sourceTree = "<group>"; };
+		C861433A27C701EE003D2904 /* View+FailableEventHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "View+FailableEventHandling.swift"; path = "../../Sources/EventHierarchy/View+FailableEventHandling.swift"; sourceTree = "<group>"; };
 		C8B9FC53278992E100A4474A /* EventHierarchyTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventHierarchyTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8B9FC56278992E100A4474A /* EventHierarchyTestsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHierarchyTestsApp.swift; sourceTree = "<group>"; };
 		C8B9FC58278992E100A4474A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C861433927C700A0003D2904 /* ErrorHierarchy in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +120,7 @@
 				C8B9FCBB278A596D00A4474A /* EventEnvironmentValues.swift */,
 				C8B9FCBE278A596D00A4474A /* EventHandlerViewModifier.swift */,
 				C8B9FCBC278A596D00A4474A /* View+EventHandling.swift */,
+				C861433A27C701EE003D2904 /* View+FailableEventHandling.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -136,6 +141,9 @@
 			dependencies = (
 			);
 			name = EventHierarchyTests;
+			packageProductDependencies = (
+				C861433827C700A0003D2904 /* ErrorHierarchy */,
+			);
 			productName = EventHierarchyTests;
 			productReference = C8B9FC53278992E100A4474A /* EventHierarchyTests.app */;
 			productType = "com.apple.product-type.application";
@@ -186,6 +194,9 @@
 				Base,
 			);
 			mainGroup = C8B9FC4A278992E100A4474A;
+			packageReferences = (
+				C861433727C700A0003D2904 /* XCRemoteSwiftPackageReference "ErrorHierarchy" */,
+			);
 			productRefGroup = C8B9FC54278992E100A4474A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -220,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C861433B27C701EE003D2904 /* View+FailableEventHandling.swift in Sources */,
 				C8B9FCC0278A596D00A4474A /* View+EventHandling.swift in Sources */,
 				C8B9FC59278992E100A4474A /* ContentView.swift in Sources */,
 				C8B9FCBF278A596D00A4474A /* EventEnvironmentValues.swift in Sources */,
@@ -488,6 +500,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C861433727C700A0003D2904 /* XCRemoteSwiftPackageReference "ErrorHierarchy" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/EmilioPelaez/ErrorHierarchy";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C861433827C700A0003D2904 /* ErrorHierarchy */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C861433727C700A0003D2904 /* XCRemoteSwiftPackageReference "ErrorHierarchy" */;
+			productName = ErrorHierarchy;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C8B9FC4B278992E100A4474A /* Project object */;
 }

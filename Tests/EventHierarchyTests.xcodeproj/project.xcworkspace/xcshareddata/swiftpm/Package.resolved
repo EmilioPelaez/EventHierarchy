@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ErrorHierarchy",
+        "repositoryURL": "https://github.com/EmilioPelaez/ErrorHierarchy",
+        "state": {
+          "branch": null,
+          "revision": "48916f103e4520f988959cd0b29f333a552776c6",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
