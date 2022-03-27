@@ -19,36 +19,36 @@ class EventHierarchyUITests: XCTestCase {
 		let app = XCUIApplication()
 		app.launch()
 		
-		app.buttons["Test 0"].tap()
+		app.buttons["Event Test 0"].tap()
 		
 		XCTAssert(true)
 		
-		app.buttons["Test 1"].tap()
+		app.buttons["Event Test 1"].tap()
 		
-		XCTAssert(app.alerts["Test 1"].exists)
-		
-		app.buttons["Close"].tap()
-		
-		app.buttons["Test 2"].tap()
-		
-		XCTAssert(app.alerts["Test 2"].exists)
+		XCTAssert(app.alerts["Event Test 1"].exists)
 		
 		app.buttons["Close"].tap()
 		
-		app.buttons["Test 4"].tap()
+		app.buttons["Event Test 2"].tap()
 		
-		XCTAssert(app.alerts["Test 4"].exists)
-		
-		app.buttons["Close"].tap()
-		
-		app.buttons["Test 5"].tap()
-		
-		XCTAssert(app.alerts["Test 5"].exists)
+		XCTAssert(app.alerts["Event Test 2"].exists)
 		
 		app.buttons["Close"].tap()
 		
-		app.buttons["Test 6"].tap()
+		app.buttons["Event Test 4"].tap()
 		
-		XCTAssert(app.alerts["Test 6"].exists)
+		XCTAssert(app.alerts["Event Test 4"].exists)
+		
+		app.buttons["Close"].tap()
+		
+		app.buttons["Event Test 5"].tap()
+		
+		XCTAssert(app.alerts["Event Test 5"].exists)
+		
+		app.buttons["Close"].tap()
+		
+		app.buttons["Event Test 6"].tap()
+		
+		XCTAssert(app.alerts["Event Test 6"].exists)
 	}
 }
